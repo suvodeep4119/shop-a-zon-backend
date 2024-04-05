@@ -4,7 +4,7 @@ exports.getAddProduct = (req, res) => {
     console.log(req.body)
     const product = {
         title: '4K monitor',
-        price: 10000,
+        price: 41000,
         description: 'A monitor for coders',
         imageUrl: 'Some 4K image'
     }
