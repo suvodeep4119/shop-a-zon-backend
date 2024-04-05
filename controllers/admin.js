@@ -3,10 +3,10 @@ const Product = require('../models/product')
 exports.getAddProduct = (req, res) => {
     console.log(req.body)
     const product = {
-        title: '4K monitorrr',
+        title: '4K monitor',
         price: 10000,
         description: 'A monitor for coders',
-        imageUrl: 'some url'
+        imageUrl: 'Some 4K image'
     }
     const testProduct = new Product(product)
     testProduct.save().then(result => {
