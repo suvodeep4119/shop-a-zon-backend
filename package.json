@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "debug": "nodemon app.js"
+    "debug": "nodemon app.js",
+    "swagger": "node ./swagger.yaml"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,9 @@
     "joi": "^17.12.2",
     "mongoose": "^8.2.4",
     "morgan": "^1.10.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
     "winston": "^3.13.0"
   }
 }

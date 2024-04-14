@@ -1,0 +1,31 @@
+const swagJsDoc = require('swagger-jsdoc');
+const swaggerAutogen = require('swagger-autogen')();
+
+const options = {
+  swaggerDefinition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'API',
+      version: '1.0.0',
+      description: 'API description',
+    },
+    servers: [
+      {
+        url: 'http://localhost:3000',
+        description: 'Development server',
+      },
+    ],
+  },
+  apis: ['./routes/*.js']
+  };
+
+
+
+const outputFile = './swagger-output.json';
+swaggerAutogen(outputFile, options.apis, options.servers);
+const swaggerSpec = swagJsDoc(options);
+module.exports = swaggerSpec;
+
+
+
+
